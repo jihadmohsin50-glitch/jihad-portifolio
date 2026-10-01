@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Jihad Mohsin | Web Developer Portfolio</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,800&family=DM+Sans:wght@400;500;700&display=swap">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<nav aria-label="Main">
+<b>Jihad M.</b>
+<a href="#top">Home</a><a href="#about">About</a><a href="#projects">Projects</a><a href="#education">Education</a><a href="#contact">Contact</a>
+</nav>
+
+<header id="top" class="hero">
+<div>
+<h1>Jihad Mohsin</h1>
+<p style="font-size:1.25rem;margin:.8rem 0 0"><b>Web developer in training.</b> Chess player for life. I build things, break things, then fix things, in that order.</p>
+<p style="color:var(--mute)">I'm 24, I learn fast, and I like problems that need patience and a lot of thinking.</p>
+<div class="btns"><a class="btn" href="#projects">See my project</a><a class="btn alt" href="#contact">Say hello</a></div>
+</div>
+<div class="frame"><img src="images/jiji.jpeg" alt="Jihad standing in front of a black gate, wearing a denim shirt and jeans"></div>
+</header>
+<div class="board" aria-hidden="true"></div>
+
+<section id="about">
+<h2>About me</h2>
+<p class="lead">From Sudan, based in Uganda, living with a family of four. Everything I do comes back to making my mother and the people I love live happy and well.</p>
+<p class="quote">"Fake it till you make it."</p>
+<p class="lead">My favourite quote. I'm now in the "make it" phase.</p>
+
+<h3 style="margin:2rem 0 1rem">Off the keyboard</h3>
+<div class="grid">
+<div class="card"><h3>Soccer</h3><p>Ninety minutes of running with no bugs, only offside calls.</p></div>
+<div class="card"><h3>Chess</h3><p>I plan ten moves ahead. Then I blunder a pawn on move three.</p></div>
+<div class="card"><h3>Hiking</h3><p>The only time I'm happy to be offline.</p></div>
+<div class="card"><h3>Writing poems</h3><p>Still searching for something that rhymes with "debugging".</p></div>
+</div>
+
+<h3 style="margin:2.5rem 0 1rem">Skills, honestly</h3>
+<div class="grid">
+<div class="card"><span class="chip">Solid</span><h3>Fast learning</h3><p>I pick up new things quickly, especially ones that need focus and analysis.</p></div>
+<div class="card"><span class="chip">Basics</span><h3>HTML</h3><p>I build and structure pages. This site is proof.</p></div>
+<div class="card"><span class="chip g">Learning</span><h3>Python and SQL</h3><p>Next on my list.</p></div>
+<div class="card"><span class="chip g">Learning</span><h3>German</h3><p>Language number three and counting.</p></div>
+</div>
+
+<h3 style="margin:2.5rem 0 1rem">My next moves</h3>
+<ol class="moves">
+<li><span class="pc" aria-hidden="true">♙</span><div><b>Learn German</b><br><span style="color:var(--mute)">Opens doors to study and work abroad.</span></div></li>
+<li><span class="pc" aria-hidden="true">♘</span><div><b>Learn Python and SQL</b><br><span style="color:var(--mute)">The tools behind my chess board project.</span></div></li>
+<li><span class="pc" aria-hidden="true">♖</span><div><b>Earn a bachelor's in mechanical engineering</b></div></li>
+<li><span class="pc" aria-hidden="true">♕</span><div><b>Work for a big car company</b></div></li>
+</ol>
+</section>
+
+<div class="board" aria-hidden="true"></div>
+
+<section id="projects">
+<h2>Projects</h2>
+<p class="lead">Where my two favourite things meet: chess and code.</p>
+<div class="card" style="padding:1.6rem">
+<h3 style="font-size:1.8rem">AI Chess Board</h3>
+<p style="margin:.6rem 0 1rem;font-size:1.05rem">A system that uses computer vision to "see" a physical or digital chessboard, work out the position, and pass it to a chess engine like Stockfish for live analysis, move hints, or automated play.</p>
+<h3 style="font-size:1.1rem;margin-bottom:.5rem">Hardware</h3>
+<ul style="margin:0 0 1.2rem;color:var(--mute)">
+<li><b style="color:var(--ink)">Overhead camera:</b> a USB webcam, Raspberry Pi camera, or phone camera placed directly above the board.</li>
+<li><b style="color:var(--ink)">Processor:</b> a laptop or PC, or a single-board computer such as a Raspberry Pi 4/5 or NVIDIA Jetson Nano.</li>
+<li><b style="color:var(--ink)">Chess set:</b> high-contrast pieces track best.</li>
+</ul>
+<h3 style="font-size:1.1rem;margin-bottom:.5rem">Software stack</h3>
+<div class="wrap"><table>
+<tr><th>Layer</th><th>Tools</th><th>Purpose</th></tr>
+<tr><td>Programming language</td><td>Python 3.x</td><td>Glue for computer vision, ML models, and API scripts</td></tr>
+<tr><td>Computer vision</td><td>OpenCV</td><td>Camera stream, Canny edge detection, perspective warping</td></tr>
+<tr><td>Machine learning</td><td>YOLOv8, Roboflow, or a custom CNN</td><td>Piece classification and bounding-box detection</td></tr>
+<tr><td>Chess engine and logic</td><td>python-chess and Stockfish</td><td>Move legality, FEN strings, and AI moves</td></tr>
+</table></div>
+</div>
+</section>
+
+<div class="board" aria-hidden="true"></div>
+
+<section id="education">
+<h2>Education</h2>
+<p class="lead">The full record, including the parts that are still in progress.</p>
+<div class="wrap"><table>
+<tr><th>School</th><th>Award</th><th>Year</th></tr>
+<tr><td>Elshaheed Ebeed Khatem</td><td>Primary School Certificate</td><td>2016</td></tr>
+<tr><td>Elshikh Mustafa Elameen</td><td>High School Certificate</td><td>2019</td></tr>
+<tr><td>University of Khartoum</td><td>Studies not completed</td><td>n/a</td></tr>
+<tr><td>FCA Institute</td><td>English and Soft Skills</td><td>2026</td></tr>
+</table></div>
+<div class="split" style="margin-top:2rem">
+<div><h3 style="margin-bottom:.6rem">Favourite subjects</h3><ul><li>Engineering drawing</li><li>Mathematics</li><li>Physics</li><li>Arabic</li></ul></div>
+<div><h3 style="margin-bottom:.6rem">Achievements</h3><ul><li>Award for good presenting</li><li>Memorised the Holy Quran</li><li>First place in final exams, several times</li><li>Led many project groups</li></ul></div>
+</div>
+</section>
+
+<div class="board" aria-hidden="true"></div>
+
+<section id="contact">
+<h2>Contact</h2>
+<p class="lead">Feedback, a project idea, or just a chess challenge. Send it over.</p>
+<div class="split">
+<form id="f">
+<label>Your name<input name="n" required autocomplete="name"></label>
+<label>Your email<input name="e" type="email" required autocomplete="email"></label>
+<label>Subject<input name="s" required></label>
+<label>Message<textarea name="m" required placeholder="Feedback, a hello, or a chess challenge"></textarea></label>
+<button class="btn" type="submit" style="font:inherit;font-weight:700;cursor:pointer">Send message</button>
+<small style="color:var(--mute)">This opens your email app with the message ready to send.</small>
+</form>
+<div class="card" style="align-self:start">
+<h3>Jihad Mohsin</h3>
+<p style="margin:.6rem 0 0;color:var(--ink)">Email: <a href="mailto:jihad@gmail.com">jihad@gmail.com</a><br>Phone: <a href="tel:077777668">077777668</a></p>
+</div>
+</div>
+</section>
+<footer>Built by Jihad Mohsin. No pawns were harmed.</footer>
+<script src="js/main.js"></script>
+</body>
+</html>

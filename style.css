@@ -1,0 +1,50 @@
+/* Jihad's portfolio styles.
+   Change colours in the :root block below: every colour on the site comes from there.
+   The dark theme colours are in the two blocks right after it. */
+:root{--bg:#F1F2E4;--sq:#DFE3C9;--ink:#15241F;--mute:#4B5B54;--green:#2F5D50;--gold:#F2B705;--card:#FBFBF3;--line:#C9CDB4;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#101A17;--sq:#1A2A25;--ink:#EEF0E0;--mute:#A9B7AF;--green:#6FB39F;--gold:#F2B705;--card:#16231F;--line:#2D423A}}
+:root[data-theme="dark"]{--bg:#101A17;--sq:#1A2A25;--ink:#EEF0E0;--mute:#A9B7AF;--green:#6FB39F;--gold:#F2B705;--card:#16231F;--line:#2D423A}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-behavior:smooth;scroll-padding-top:calc(72px + env(safe-area-inset-top,0px))}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 1.05rem/1.65 "DM Sans",system-ui,sans-serif}
+h1,h2,h3{font-family:"Bricolage Grotesque","DM Sans",system-ui,sans-serif;line-height:1.1;margin:0}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
+nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--bg);border-bottom:2px solid var(--ink);display:flex;align-items:center;gap:.25rem;padding:.6rem 1rem;overflow-x:auto}
+nav b{font:800 1.15rem "Bricolage Grotesque",sans-serif;margin-right:auto;white-space:nowrap}
+nav a{text-decoration:none;font-weight:700;padding:.4rem .8rem;border-radius:8px;white-space:nowrap}
+nav a:hover{background:var(--gold);color:#15241F}
+section,header{max-width:1040px;margin:0 auto;padding:4.5rem 1.25rem}
+h2{font-size:clamp(2rem,5vw,3rem);margin-bottom:.4rem}
+.lead{color:var(--mute);max-width:60ch;margin:0 0 2rem}
+.hero{display:grid;grid-template-columns:1.4fr 1fr;gap:3rem;align-items:center}
+.hero h1{font-size:clamp(3rem,9vw,6rem);font-weight:800;letter-spacing:-.03em}
+.hero p{max-width:46ch}
+.btns{display:flex;flex-wrap:wrap;gap:.75rem;margin-top:1.5rem}
+.btn{display:inline-block;text-decoration:none;font-weight:700;padding:.8rem 1.4rem;border:2px solid var(--ink);border-radius:10px;background:var(--gold);color:#15241F;box-shadow:4px 4px 0 var(--ink)}
+.btn.alt{background:transparent;color:var(--ink)}
+.btn:hover{transform:translate(2px,2px);box-shadow:2px 2px 0 var(--ink)}
+.frame{border:2px solid var(--ink);padding:10px;background:conic-gradient(var(--green) 25%,var(--sq) 0 50%,var(--green) 0 75%,var(--sq) 0) 0 0/40px 40px;border-radius:12px;transform:rotate(2deg)}
+.frame img{display:block;width:100%;height:auto;border-radius:6px}
+.board{height:40px;border-block:2px solid var(--ink);background:conic-gradient(var(--green) 25%,var(--sq) 0 50%,var(--green) 0 75%,var(--sq) 0) 0 0/40px 40px}
+.quote{font:800 clamp(1.4rem,4vw,2.2rem) "Bricolage Grotesque",sans-serif;margin:0 0 .3rem}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:1rem}
+.card{background:var(--card);border:2px solid var(--ink);border-radius:12px;padding:1.2rem}
+.card h3{font-size:1.2rem;margin-bottom:.3rem}
+.card p{margin:0;color:var(--mute);font-size:.98rem}
+.chip{display:inline-block;font-size:.85rem;font-weight:700;padding:.15rem .6rem;border:2px solid var(--ink);border-radius:99px;background:var(--gold);color:#15241F;margin-bottom:.5rem}
+.chip.g{background:var(--sq);color:var(--ink)}
+.moves{list-style:none;padding:0;margin:0;display:grid;gap:.8rem}
+.moves li{display:grid;grid-template-columns:3rem 1fr;gap:1rem;align-items:center;background:var(--card);border:2px solid var(--ink);border-radius:12px;padding:.9rem 1.2rem}
+.moves .pc{font-size:2rem;text-align:center}
+.wrap{overflow-x:auto}
+table{border-collapse:collapse;width:100%;min-width:480px;background:var(--card);border:2px solid var(--ink)}
+th,td{text-align:left;padding:.75rem 1rem;border-bottom:1px solid var(--line)}
+th{background:var(--green);color:#fff;font-family:"Bricolage Grotesque",sans-serif}
+.split{display:grid;grid-template-columns:1fr 1fr;gap:2rem}
+form{display:grid;gap:1rem}
+label{font-weight:700;display:grid;gap:.3rem}
+input,textarea{font:inherit;color:var(--ink);background:var(--card);border:2px solid var(--ink);border-radius:8px;padding:.7rem}
+textarea{min-height:130px;resize:vertical}
+footer{border-top:2px solid var(--ink);text-align:center;padding:2rem 1rem;color:var(--mute)}
+@media(max-width:760px){.hero,.split{grid-template-columns:1fr}.frame{max-width:320px;margin:0 auto}section,header{padding:3rem 1rem}}
